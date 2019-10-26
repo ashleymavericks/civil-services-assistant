@@ -102,6 +102,8 @@ const data = [
   'The Dead Sea is currently 429 meters below sea level and sinking about 1 meter a year.'
   'Mount Everest, the world’s tallest mountain, can fit inside the Marianas Trench, the deepest part of the ocean.',
    'Continents shift at about the same rate as your fingernails grow.',
+  'It is the seventh-largest country in the world, with a total area of 3,287,263 square kilometres (1,269,219 sq mi).',
+  'Brahmaputra River, flowing over an area of 2, 900 km is the countrys longest river.',
 ];
 
 const skillBuilder = Alexa.SkillBuilders.standard();
