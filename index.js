@@ -101,6 +101,7 @@ const data = [
    'Mt. Thor on Baffin Island, Canada, has Earth’s greatest sheer vertical drop (4,101 feet).'
   'The Dead Sea is currently 429 meters below sea level and sinking about 1 meter a year.'
   'Mount Everest, the world’s tallest mountain, can fit inside the Marianas Trench, the deepest part of the ocean.',
+   'Continents shift at about the same rate as your fingernails grow.',
 ];
 
 const skillBuilder = Alexa.SkillBuilders.standard();
