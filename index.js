@@ -45,6 +45,23 @@ const LaunchRequestHandler = {
   },
 }
 
+const GreetMeIntentHandler = {
+  canHandle(handlerInput) {
+    return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+      && handlerInput.requestEnvelope.request.intent.name === 'GreetMeIntent';
+  },
+  handle(handlerInput) {
+    const slots = handlerInput.requestEnvelope.request.intent.slots;
+    const speechText = `Glad to hear about it. Please tell me about your topic of interest?`
+
+    return handlerInput.responseBuilder
+      .speak(speechText)
+      .reprompt ('Please tell me about your topic of interest.')
+      .withSimpleCard('APP_NAME', speechText)
+      .getResponse();
+  },
+};
+
 const GetNewFactHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
