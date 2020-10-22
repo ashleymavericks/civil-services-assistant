@@ -2,6 +2,48 @@
 /* eslint-disable  no-console */
 
 const Alexa = require('ask-sdk');
+const APP_NAME = "Civil Services Assistant";
+const messages = {
+  NOTIFY_MISSING_PERMISSIONS: 'Please enable profile permissions in the Amazon Alexa app.',
+  ERROR: 'Uh Oh. Looks like something went wrong.'
+};
+
+const FULL_NAME_PERMISSION = "alexa::profile:name:read";
+const EMAIL_PERMISSION = "alexa::profile:email:read";
+const MOBILE_PERMISSION = "alexa::profile:mobile_number:read";
+
+const LaunchRequestHandler = {
+  canHandle(handlerInput) {
+    const request = handlerInput.requestEnvelope.request;
+    return request.type === 'LaunchRequest';
+  },
+  async handle(handlerInput) {
+    const { serviceClientFactory, responseBuilder } = handlerInput;
+    try {
+      const upsServiceClient = serviceClientFactory.getUpsServiceClient();
+      const profileName = await upsServiceClient.getProfileName();
+      const speechResponse = `Hello, ${profileName} , Welcome to Civil Services Assistant. How are you feeling today?`;
+      const speechText= "How are you feeling today?"
+      return responseBuilder
+                      .speak(speechResponse)
+                      .reprompt(speechText)
+                      .withSimpleCard(APP_NAME, speechResponse)
+                      .getResponse();
+    } catch (error) {
+      console.log(JSON.stringify(error));
+      if (error.statusCode === 403) {
+        return responseBuilder
+        .speak(messages.NOTIFY_MISSING_PERMISSIONS)
+        .withAskForPermissionsConsentCard([FULL_NAME_PERMISSION])
+        .getResponse();
+      }
+      console.log(JSON.stringify(error));
+      
+      const response = responseBuilder.speak(messages.ERROR).getResponse();
+      return response;
+    }
+  },
+}
 
 const GetNewFactHandler = {
   canHandle(handlerInput) {
