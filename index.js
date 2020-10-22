@@ -97,10 +97,10 @@ const data = [
   'The largest bell in the world is the	Tsar Kolkol at Kremlin, Moscow.',
   'The Red Cross was founded by	Jean Henri Durant.',
   'Niagara Falls was discovered by Louis Hennepin.',
-  'The religion of early Vedic Aryans was primarily of worship of nature and Yajnas.'
-   'Mt. Thor on Baffin Island, Canada, has Earth’s greatest sheer vertical drop (4,101 feet).'
-  'The Dead Sea is currently 429 meters below sea level and sinking about 1 meter a year.'
-  'Mount Everest, the world’s tallest mountain, can fit inside the Marianas Trench, the deepest part of the ocean.',
+  'The religion of early Vedic Aryans was primarily of worship of nature and Yajnas.',
+   'Mt. Thor on Baffin Island, Canada, has Earth’s greatest sheer vertical drop (4,101 feet).',
+  'The Dead Sea is currently 429 meters below sea level and sinking about 1 meter a year.',
+  'Mount Everest, the world’s tallest mountain, can fit inside the Marianas Trench, the deepest part of the ocean.'
 ];
 
 const skillBuilder = Alexa.SkillBuilders.standard();
