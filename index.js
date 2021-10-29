@@ -164,7 +164,9 @@ const data = [
   'It is the seventh-largest country in the world, with a total area of 3,287,263 square kilometres (1,269,219 sq mi).',
   'Brahmaputra River, flowing over an area of 2, 900 km is the countrys longest river.',
   'Alaska is both the westernmost and easternmost state in America.',
-  'Antarctica is the largest desert in the world.'
+  'Antarctica is the largest desert in the world.',
+  'Apple has launched its new Macbook pro 14 inch with new M1 pro chip.',
+  'GST has reached record high, economoy growth is on track - says RBI'
 ];
 
 const skillBuilder = Alexa.SkillBuilders.standard();
