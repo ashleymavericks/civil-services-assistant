@@ -8,5 +8,7 @@ Civil Services Assistant is your training guide for UPSC exams by providing prev
 3. Sociology
 4. Economics
 5. General Science
+6. Current Affairs
+7. Technology
 
 Link To Enable Skill: https://www.amazon.in/ashleymavericks-Civil-Services-Assistant/dp/B07NSWWJRT/ref=sr_1_2?s=digital-skills&ie=UTF8&qid=1553031289&sr=1-2&keywords=upsc
