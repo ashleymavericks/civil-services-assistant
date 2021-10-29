@@ -4,12 +4,12 @@
 		"response": {
 			"outputSpeech": {
 				"type": "SSML",
-				"ssml": "<speak>Here's your training question: Fruits stored in a cold chamber exhibit longer storage life because rate of respiration is decreased.</speak>"
+				"ssml": "<speak>Here's your training question: Bananas are ripped using Artifical chemicals.</speak>"
 			},
 			"card": {
 				"type": "Simple",
 				"title": "Civil Services Assistant",
-				"content": "Fruits stored in a cold chamber exhibit longer storage life because rate of respiration is decreased."
+				"content": "Bananas are ripped using Artifical chemicals."
 			},
 			"type": "_DEFAULT_RESPONSE"
 		},
