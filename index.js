@@ -4,7 +4,7 @@
 const Alexa = require('ask-sdk');
 const APP_NAME = "Civil Services Assistant";
 const messages = {
-  NOTIFY_MISSING_PERMISSIONS: 'Please enable profile permissions in the Amazon Alexa app.',
+  NOTIFY_MISSING_PERMISSIONS: 'Please enable profile permissions in the Amazon Alexa app. It is required to access your Name and Email info',
   ERROR: 'Uh Oh. Looks like something went wrong.'
 };
 
