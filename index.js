@@ -22,8 +22,8 @@ const LaunchRequestHandler = {
     try {
       const upsServiceClient = serviceClientFactory.getUpsServiceClient();
       const profileName = await upsServiceClient.getProfileName();
-      const speechResponse = `Hello, ${profileName} , Welcome to Civil Services Assistant. How are you feeling today?`;
-      const speechText= "How are you feeling today?"
+      const speechResponse = `Hello, ${profileName} , Welcome to Civil Services Assistant. How are you doing today?`;
+      const speechText= "How are you doing today"
       return responseBuilder
                       .speak(speechResponse)
                       .reprompt(speechText)
@@ -130,8 +130,8 @@ const ErrorHandler = {
     console.log(`Error handled: ${error.message}`);
 
     return handlerInput.responseBuilder
-      .speak('Sorry, an error occurred.')
-      .reprompt('Sorry, an error occurred.')
+      .speak('Sorry, an error has been occurred.')
+      .reprompt('Sorry, an error has been occurred.')
       .getResponse();
   },
 };
